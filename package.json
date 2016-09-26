@@ -4,10 +4,11 @@
   "description": "home page",
   "main": "server.js",
   "scripts": {
-    "test": "test"
+    "start-mframe": "PORT=8084 pm2 start server.js --name aionics.ru",
+    "start-aion": "PORT=8080 node server.js",
+    "restart": "pm2 restart aionics.ru"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Aionics",
   "dependencies": {
     "express": "^4.14.0"
   }
