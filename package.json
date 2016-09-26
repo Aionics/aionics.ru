@@ -1,0 +1,14 @@
+{
+  "name": "aionics.ru",
+  "version": "0.0.1",
+  "description": "home page",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
