@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "home page",
   "main": "server.js",
+  "config": { "port": "8084" },
   "scripts": {
     "start-mframe": "PORT=8084 pm2 start server.js --name aionics.ru",
     "start-aion": "PORT=8080 node server.js",
