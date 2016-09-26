@@ -1,6 +1,13 @@
 var express = require('express');
 var server = express();
+var path = require('path');
+var PORT = 8084;
 
-server.get('/', function(req, res){
-	res.sendFile(path.join(__dirname, 'www/', 'index.html'))
-})
+server.use('/', express.static('./www'));
+server.get('/*', function(req, res){
+	res.sendFile('index.html', { root: __dirname + '/www' });
+});
+
+server.listen(PORT, function() {
+	console.log('listening ' + PORT);
+});

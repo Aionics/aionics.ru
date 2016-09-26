@@ -1,3 +1,18 @@
+@font-face {
+	font-family: "Dual";
+	src: url('data/fonts/Dual-300.ttf');
+}
 body {
 	background-color: #1b1b1d;
+}
+
+label {
+	font-size: 48px;
+    font-family: Dual;
+    color: white; 
+    letter-spacing: 3px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
