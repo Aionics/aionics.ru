@@ -5,8 +5,12 @@ var path = require('path');
 server.use('/', express.static('./www'));
 
 server.get('/manage', function(req, res) {
-	
+	res.end('not ready yet');
 })
+server.get('/dev', function(req, res) {
+	res.sendFile('dev.html', { root: __dirname + '/www' });
+})
+
 server.get('/', function(req, res){
 	res.sendFile('index.html', { root: __dirname + '/www' });
 });
